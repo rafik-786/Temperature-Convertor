@@ -49,6 +49,8 @@ body {
   color: white;
   font-size: 20px;
   padding-left: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 .container .box input::-moz-placeholder {
   color: rgb(239, 241, 239);
