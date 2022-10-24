@@ -18,4 +18,56 @@ body{
     height: 40vh;
     /* background-color: green; */
     text-align: center;
+
+    & h1{
+        margin: 20px;
+        // background-color: red;
+    }
+
+    & .box{
+        display: flex;
+        height: 20vh; 
+        justify-content: space-evenly   ;
+        flex-wrap: wrap;
+        padding: 5px;
+        // background-color: green;
+
+        & > *{
+            flex:1 1 45% ;  
+            margin: 10px;
+        }
+
+        & input{
+            color: white;
+            font-size: 20px;
+            padding-left: 10px;
+            
+            &::placeholder{
+                color: rgb(239, 241, 239);
+                letter-spacing: 2px;
+            }
+        }
+
+        & button{
+            color: $color-white;
+            font-size: 20px;
+            max-width: 150px;
+            transition: .2s ease;
+            background-color:  rgba(135, 207, 53, 0.861);
+
+            &:hover{
+               
+               box-shadow: 0px 0px  14px rgba(202, 199, 199, 0.692);
+               transform: translateY(-1px);
+            }
+            &:active{
+                transform: translateY(0px);
+                box-shadow: 0px 0px  14px rgba(227, 224, 224, 0.692);
+            }
+        }
+
+    }
+
+
+
 }
