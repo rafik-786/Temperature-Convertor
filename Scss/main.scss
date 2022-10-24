@@ -6,6 +6,7 @@
 body{
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-image: url("../asset/background.webp");
@@ -28,44 +29,46 @@ body{
         display: flex;
         height: 20vh; 
         justify-content: space-evenly   ;
+        align-items: center ;
         flex-wrap: wrap;
         padding: 5px;
-        // background-color: green;
+        // background-color: green;    
 
-        & > *{
-            flex:1 1 45% ;  
-            margin: 10px;
-        }
-
-        & input{
+        & .input-box{
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            // background-color: red;
+            width: 40%;
+            margin: 0 10px;
             color: white;
-            font-size: 20px;
-            padding-left: 10px;
-            font-weight: 500;
-            letter-spacing: 2px;
-            &::placeholder{
-                color: rgb(239, 241, 239);
-                letter-spacing: 2px;
+            
+            & label{
+                color: rgba(238, 233, 233, 0.84);
+                margin-bottom: 5px;
+                font-size: 25px;
+                text-align: center;
             }
+
+            & input{
+                font-size: 25px;
+                padding: 5px;
+                color: white;
+
+                &:focus{
+                    box-shadow: -5px 0px 25px rgba(180, 222, 56, 0.895);
+                    outline: none;
+                }
+
+                &::placeholder{
+                    font-size: 15px;
+                    letter-spacing: 2px;
+                }
+            }
+
         }
 
-        & button{
-            color: $color-white;
-            font-size: 20px;
-            max-width: 150px;
-            transition: .2s ease;
-            background-color:  rgba(135, 207, 53, 0.861);
-
-            &:hover{
-               
-               box-shadow: 0px 0px  14px rgba(202, 199, 199, 0.692);
-               transform: translateY(-1px);
-            }
-            &:active{
-                transform: translateY(0px);
-                box-shadow: 0px 0px  14px rgba(227, 224, 224, 0.692);
-            }
-        }
+        
 
     }
 
