@@ -1,0 +1,21 @@
+@import "var";
+@import "features";
+
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/asset/background.webp);
+    background-size: cover;
+    color: $color-white;
+
+}
+.container{
+    width: 70vw;
+    height: 40vh;
+    /* background-color: green; */
+    text-align: center;
+}
